@@ -5,6 +5,21 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: [
+        SizedBox(width: 20,),
+        _buildHeaderAvatar(),
+        SizedBox(width: 20,),
+        _buildHeaderPrifile(),
+      ],
+    );
+  }
+
+  Widget _buildHeaderPrifile() {
+    return SizedBox();
+  }
+
+  Widget _buildHeaderAvatar() {
+    return SizedBox();
   }
 }
