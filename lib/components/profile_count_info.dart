@@ -13,16 +13,21 @@ class CountInfo extends StatelessWidget {
         _buildInfo("10", "likes"),
         _buildLine(),
         _buildInfo("3", "Shere"),
-        _buildLine(),
       ],
     );
   }
 
   Widget _buildLine() {
-    return SizedBox();
+    return Container(width: 2, height: 60, color: Colors.blue,);
   }
 
   Widget _buildInfo(String cnt, String text) {
-    return SizedBox();
+    return Column(
+      children: [
+        Text(cnt, style: TextStyle(fontSize: 15),),
+        SizedBox(height: 2,),
+        Text(text, style: TextStyle(fontSize: 15),),
+      ],
+    );
   }
 }
